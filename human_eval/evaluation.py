@@ -98,7 +98,7 @@ def evaluate_functional_correctness(
             sample["passed"] = result[1]["passed"]
             yield sample
 
-    out_file = "/kaggle/working/mistral_results_10.jsonl"
+    out_file = "/kaggle/working/llama_results_10.jsonl"
     print(f"Writing results to {out_file}...")
     write_jsonl(out_file, tqdm.tqdm(combine_results(), total=n_samples))
 
